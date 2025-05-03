@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato - Bolos Caseiros Dirley</title>
+    <link rel="icon" href="https://i.ibb.co/JFWpjzs0/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="textos-header">
+                <a href="index.html"><h1>Bolos Caseiros Dirley</h1>
+                    <h2>da minha para sua casa</h2></a>
+            </div>
+            <div class="logo-container logo-destaque">
+                <img src="https://i.ibb.co/JFWpjzs0/logo.png" height="300" width="300" alt="Logo Bolos Caseiros Dirley">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <script src="mobile-navbar.js"></script>
+        <section class="secao-centralizada">
+            <article>
+                <h3>Entre em contato</h3>
+                <p>Faça sua encomenda com a gente! Para garantir que o seu bolo seja perfeito e do jeitinho que você
+                    gosta, todos os pedidos são realizados diretamente pelo nosso <i>WhatsApp</i>:</p>
+
+                <div>
+                    <a href="https://encurtador.com.br/i9KMx" target="_blank" rel="noopener noreferrer external">
+                        <p><ion-icon name="logo-whatsapp"></ion-icon> +55 (11) 97032-0512</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/dirley_boloscaseiros/" target="_blank"
+                        rel="noopener noreferrer external">
+                        <p><ion-icon name="logo-instagram"></ion-icon> @dirley_boloscaseiros</p>
+                    </a>
+                </div>
+
+                <div>
+                    <p><ion-icon name="mail-outline"></ion-icon> boloscaseirosdirley@gmail.com</p>
+                </div>
+
+            </article>
+
+            <article class="formulario-contato">
+                <h3>Envie uma mensagem</h3>
+                <form name="contact" method="post" autocomplete="on" netlify>
+                    <p>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="nome" id="inome" required placeholder="Nome" autocomplete="name">
+                    </p>
+
+                    <p>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="e-mail" id="iemail" required placeholder="Endereço de e-mail"
+                            autocomplete="email" size="25">
+                    </p>
+
+                    <p>
+                        <label for="itelefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="itelefone" required maxlength="16"
+                            placeholder="(xx) xxxxx-xxxx" autocomplete="tel-national" oninput="formatarTelefone(this)">
+
+                        <script>
+                            function formatarTelefone(input) {
+                                const cursorPosition = input.selectionStart;
+                                const valorAnterior = input.value;
+                                const numeroLimpo = input.value.replace(/\D/g, '');
+                                let formattedNumber = '';
+
+                                if (numeroLimpo.length > 0) {
+                                    formattedNumber += '(' + numeroLimpo.substring(0, 2);
+                                }
+
+                                if (numeroLimpo.length > 2) {
+                                    formattedNumber += ') ' + numeroLimpo.substring(2, 7);
+                                }
+
+                                if (numeroLimpo.length > 7) {
+                                    formattedNumber += '-' + numeroLimpo.substring(7, 11);
+                                }
+
+                                input.value = formattedNumber;
+
+                                if (valorAnterior.length <= formattedNumber.length) {
+                                    input.selectionStart = cursorPosition + (formattedNumber.length - valorAnterior.length);
+                                    input.selectionEnd = cursorPosition + (formattedNumber.length - valorAnterior.length);
+                                } else {
+                                    input.selectionStart = cursorPosition - (valorAnterior.length - formattedNumber.length);
+                                    input.selectionEnd = cursorPosition - (valorAnterior.length - formattedNumber.length);
+                                }
+                            }
+                        </script>
+                    </p>
+
+                    <p class="campo mensagem-campo">
+                        <label for="imensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="imensagem" rows="5" cols="50"
+                            placeholder="Digite sua mensagem aqui..." required
+                            style="width: 100%; height: auto; padding: 20px; box-sizing: border-box; border: 1px solid #b5e3d3; border-radius: 4px;"></textarea>
+                    </p>
+
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
+
+<footer>
+    <p><b>© 2025 - Bolos Caseiros Dirley. Todos os direitos reservados.</b></p>
+    <p>Feito com carinho por Luana de Almeida.</p>
+    <i><p style="font-size: small;">Foto 'Recheios' por: Receitas Nestlé
+        (https://www.receitasnestle.com.br)</i></p>
+</footer>
+
+</html>
