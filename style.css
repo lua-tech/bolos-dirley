@@ -63,7 +63,7 @@ header .header-content .textos-header h2 {
         font-size: 5vw;
     }
     header .header-content .textos-header h2 {
-        font-size: 4.5vw; 
+        font-size: 4vw; 
     }
 }
 /*tamanho da h1 e h2 no celular*/
@@ -75,11 +75,6 @@ header .header-content .textos-header h2 {
 
 header .header-content .logo-container {
     margin-right: 50px; /* tamanho da logo */
-}
-
-header .header-content .logo-container img {
-    max-width: 200px; 
-    height: auto; 
 }
 
 @media (max-width: 768px) {
