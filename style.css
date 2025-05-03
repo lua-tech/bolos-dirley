@@ -108,21 +108,6 @@ main article {
     margin-bottom: 30px;
 }
 
-main article p {
-    text-indent: 3em;  /* indentação de parágrafos para telas maiores*/
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-  
-  @media (max-width: 768px) {
-    main article p {
-      text-indent: 1.5em; /* indentação de parágrafos para telas menores*/
-    }
-}
-
 /* formatação responsiva das imagens do article sobre */
 main article img {
     max-width: 100%; 
