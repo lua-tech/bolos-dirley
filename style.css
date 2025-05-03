@@ -160,6 +160,7 @@ article {
     background-color: #f8f3ee;
     border-top: 2px solid #e9bcb9;
     border-bottom: 2px solid #e9bcb9;
+    border-radius: 5px;
 }
 
 /* articles de recheio */
