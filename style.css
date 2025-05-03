@@ -703,17 +703,18 @@ ion-icon {
     }
 }
 
-/*botão de secções internas menu - ajustes para mobile */
+/*botão de secções internas menu - ajustes para mobile (v2) */
 @media (max-width: 768px) {
     .botao-voltar {
         position: fixed; 
         top: auto; 
-        left: 10px; 
-        bottom: 20px; 
+        left: auto;
+        right: 20px; 
+        bottom: auto;
         margin-top: 0; 
+        transform: translateY(-50%); 
     }
 }
-/*botão de secções internas menu - ajustes para mobile */
 
 /*botão de secções internas menu*/
 .botao-voltar {
@@ -732,7 +733,6 @@ ion-icon {
 .botao-voltar span {
     margin-right: 5px;
 }
-/*botão de secções internas menu*/
 
 /* footer */
 footer {
