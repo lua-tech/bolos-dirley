@@ -108,6 +108,16 @@ main article {
     margin-bottom: 30px;
 }
 
+/* formatação responsiva das imagens do article sobre */
+main article img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+/* formatação responsiva das imagens do article sobre */
+
 main h3 {
     font-family: "Lexend", sans-serif;
     font-weight: 200px;
