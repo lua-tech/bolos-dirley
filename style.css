@@ -773,6 +773,30 @@ footer p {
     font-family: "Lato", sans-serif;
     margin: 5px 10px;
 }
+
+/* footer (mobile) */
+@media (max-width: 768px) {
+    footer {
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      padding: 10px 0;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  
+    footer p {
+      margin: 5px 0; 
+    }
+  
+    footer i p {
+      font-size: 0.8em; 
+      margin-top: 2px; 
+      margin-bottom: 2px; 
+    }
+  }
+
 /* footer */
 
 /* scrollbar chromium browsers */
