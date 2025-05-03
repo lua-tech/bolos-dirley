@@ -54,7 +54,7 @@ header .header-content .textos-header h2 {
 
 .textos-header h1,
 .textos-header h2 {
-    margin: 0;
+    margin: 0;
 }
 
 header .header-content .logo-container {
@@ -720,9 +720,11 @@ footer p {
   ::-webkit-scrollbar-track {
     background-color: #f8f3ee; 
   }
-  
-/* scrollbar firefox */
-  * {
+/* scrollbar chromium browsers */
+
+/* scrollbar non-chromium browsers (firefox) */
+* {
     scrollbar-width: thin;
     scrollbar-color: #5f3818 #f8f3ee; 
-  }
+}
+/* scrollbar non-chromium browsers (firefox) */
