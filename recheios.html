@@ -82,14 +82,18 @@
     <script>
         window.onload = function() {
             const header = document.querySelector('header');
-            const primeiroArticle = document.querySelector('.primeiro-article');
             const botaoVoltar = document.querySelector('.botao-voltar');
-            const distanciaDesejadaVertical = 5;
-
-            if (header && primeiroArticle && botaoVoltar) {
-                const articleTop = primeiroArticle.offsetTop;
-
-                botaoVoltar.style.top = (articleTop - distanciaDesejadaVertical) + 'px';
+            const distanciaDesejadaVertical = 20; // Aumentei um pouco a distância para mobile
+    
+            if (header && botaoVoltar) {
+                const headerHeight = header.offsetHeight;
+                botaoVoltar.style.top = (headerHeight + distanciaDesejadaVertical) + 'px';
+    
+                // Adiciona um ouvinte de resize para ajustar a posição em mudanças de tela
+                window.addEventListener('resize', function() {
+                    const newHeaderHeight = document.querySelector('header').offsetHeight;
+                    botaoVoltar.style.top = (newHeaderHeight + distanciaDesejadaVertical) + 'px';
+                });
             }
         };
     </script>

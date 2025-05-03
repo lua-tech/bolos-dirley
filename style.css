@@ -703,11 +703,23 @@ ion-icon {
     }
 }
 
+/*botão de secções internas menu - ajustes para mobile */
+@media (max-width: 768px) {
+    .botao-voltar {
+        position: fixed; 
+        top: auto; 
+        left: 10px; 
+        bottom: 20px; 
+        margin-top: 0; 
+    }
+}
+/*botão de secções internas menu - ajustes para mobile */
+
 /*botão de secções internas menu*/
 .botao-voltar {
     position: absolute;
-    top: auto;
-    left: calc(10% + (2px / 3)); 
+    top: auto; 
+    left: calc(10% + (2px / 3));
     color: #5f3818;
     font-size: 24px;
     text-decoration: none;
