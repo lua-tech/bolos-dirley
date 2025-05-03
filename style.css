@@ -17,7 +17,6 @@ header {
 header .header-content {
     display: flex;
     align-items: center; 
-    justify-content: space-between; 
 }
 
 header .header-content .textos-header {
@@ -58,13 +57,36 @@ header .header-content .textos-header h2 {
     0.5px 1px 0 white;
 }
 
+/*tamanho da h1 e h2 no celular*/
+@media (max-width: 768px) {
+    header .header-content .textos-header h1 {
+        font-size: 5vw;
+    }
+    header .header-content .textos-header h2 {
+        font-size: 3.5vw; 
+    }
+}
+/*tamanho da h1 e h2 no celular*/
+
 .textos-header h1,
 .textos-header h2 {
     margin: 0;
 }
 
 header .header-content .logo-container {
-    margin-left: auto; 
+    margin-right: 50px; /* tamanho da logo */
+}
+
+@media (max-width: 768px) {
+    .header .header-content .logo-container {
+        width: auto; 
+        height: auto; 
+    }
+
+    .header .header-content .logo-container img {
+        width: 80px; 
+        height: auto; 
+    }
 }
 
 * {
@@ -703,14 +725,14 @@ ion-icon {
     }
 }
 
-/*botão de secções internas menu - ajustes para mobile (v2) */
+/*botão de secções internas menu - ajustes para mobile*/
 @media (max-width: 768px) {
     .botao-voltar {
         position: fixed; 
         top: auto; 
-        left: auto;
-        right: 20px; 
-        bottom: auto;
+        left: 20px; 
+        right: auto; 
+        bottom: auto; 
         margin-top: 0; 
         transform: translateY(-50%); 
     }
