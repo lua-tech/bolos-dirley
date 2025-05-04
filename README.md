@@ -5,4 +5,4 @@
 
 **en-us**: creation of a static website using the HTML5, CSS3 and JavaScript markup languages for an extensive web programming assignment/project in the 1st semester of the computer science course, with a socially positive theme for the local community. the main objectives of this website are to facilitate contact and orders for a small online store owned by a cake seller and to boost the growth of her business.
 
-![Image](https://github.com/user-attachments/assets/fcd636f1-3098-4c70-99c5-64c156c2bb6d)
+![Image](https://github.com/user-attachments/assets/cb01a5a8-5852-402a-931b-fcbd73910079)
