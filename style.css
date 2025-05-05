@@ -104,6 +104,7 @@ a:hover {
     opacity: 0.7;
 }
 
+/*main */
 main {
     background-size: cover;
     min-height: 92vh;
@@ -129,6 +130,7 @@ main article {
     max-width: 800px;
     margin-bottom: 30px;
 }
+/*main */
 
 /* formatação responsiva das imagens do article sobre */
 main article img {
